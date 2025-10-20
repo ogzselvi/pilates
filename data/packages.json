@@ -1,0 +1,50 @@
+[
+  {
+    "id": "package-1",
+    "name": "4 Seans Paketi",
+    "description": "Başlangıç paketi",
+    "sessionCount": 4,
+    "price": 600,
+    "validityDays": 30,
+    "sessionType": "reformer",
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "package-2",
+    "name": "8 Seans Paketi",
+    "description": "Popüler paket",
+    "sessionCount": 8,
+    "price": 1200,
+    "validityDays": 60,
+    "sessionType": "reformer",
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "package-3",
+    "name": "12 Seans Paketi",
+    "description": "En avantajlı paket",
+    "sessionCount": 12,
+    "price": 1800,
+    "validityDays": 90,
+    "sessionType": "reformer",
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "package-4",
+    "name": "Mat Pilates - 8 Seans",
+    "description": "Mat pilates dersleri için",
+    "sessionCount": 8,
+    "price": 800,
+    "validityDays": 60,
+    "sessionType": "mat",
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]

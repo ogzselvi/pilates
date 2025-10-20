@@ -1,0 +1,66 @@
+[
+  {
+    "id": "client-1",
+    "firstName": "Elif",
+    "lastName": "Yılmaz",
+    "fullName": "Elif Yılmaz",
+    "tcNo": "12345678901",
+    "phone": "5551234567",
+    "email": "elif.yilmaz@example.com",
+    "gender": "female",
+    "birthDate": "1990-05-15",
+    "address": "Kadıköy, İstanbul",
+    "profileImage": "",
+    "emergencyContact": {
+      "name": "Mehmet Yılmaz",
+      "phone": "5559876543",
+      "relationship": "spouse"
+    },
+    "healthInfo": {
+      "healthStatus": "Sağlıklı",
+      "allergies": [],
+      "medications": [],
+      "goals": ["Esneklik artışı", "Kilo verme", "Stres azaltma"],
+      "notes": "Sırt ağrısı var, dikkatli olunmalı"
+    },
+    "status": "active",
+    "registrationDate": "2024-01-15",
+    "lastSessionDate": "2024-05-18",
+    "totalSessions": 24,
+    "notes": "Çok motive, düzenli katılıyor",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-05-18T14:30:00.000Z"
+  },
+  {
+    "id": "client-2",
+    "firstName": "Ayşe",
+    "lastName": "Demir",
+    "fullName": "Ayşe Demir",
+    "tcNo": "98765432109",
+    "phone": "5552345678",
+    "email": "ayse.demir@example.com",
+    "gender": "female",
+    "birthDate": "1985-08-22",
+    "address": "Beşiktaş, İstanbul",
+    "profileImage": "",
+    "emergencyContact": {
+      "name": "Ali Demir",
+      "phone": "5558765432",
+      "relationship": "spouse"
+    },
+    "healthInfo": {
+      "healthStatus": "Sağlıklı",
+      "allergies": ["Polen"],
+      "medications": ["Antihistaminik"],
+      "goals": ["Duruş düzeltme", "Core güçlendirme"],
+      "notes": ""
+    },
+    "status": "active",
+    "registrationDate": "2024-02-01",
+    "lastSessionDate": "2024-05-17",
+    "totalSessions": 18,
+    "notes": "",
+    "createdAt": "2024-02-01T09:00:00.000Z",
+    "updatedAt": "2024-05-17T11:00:00.000Z"
+  }
+]

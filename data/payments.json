@@ -1,0 +1,36 @@
+[
+  {
+    "id": "payment-1",
+    "clientId": "client-1",
+    "clientName": "Elif Yılmaz",
+    "amount": 1200,
+    "paidAmount": 1200,
+    "remainingAmount": 0,
+    "status": "paid",
+    "method": "card",
+    "dueDate": "2024-05-18",
+    "paidDate": "2024-05-18",
+    "packageName": "8 Seans Paketi",
+    "sessionCount": 8,
+    "notes": "",
+    "createdAt": "2024-05-18T09:00:00.000Z",
+    "updatedAt": "2024-05-18T09:30:00.000Z"
+  },
+  {
+    "id": "payment-2",
+    "clientId": "client-2",
+    "clientName": "Ayşe Demir",
+    "amount": 1800,
+    "paidAmount": 900,
+    "remainingAmount": 900,
+    "status": "partial",
+    "method": "cash",
+    "dueDate": "2024-06-01",
+    "paidDate": "2024-05-01",
+    "packageName": "12 Seans Paketi",
+    "sessionCount": 12,
+    "notes": "İkinci taksit 1 Haziran'da ödenecek",
+    "createdAt": "2024-05-01T10:00:00.000Z",
+    "updatedAt": "2024-05-01T10:30:00.000Z"
+  }
+]

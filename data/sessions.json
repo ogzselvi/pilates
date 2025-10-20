@@ -1,0 +1,51 @@
+[
+  {
+    "id": "session-1",
+    "clientId": "client-1",
+    "clientName": "Elif Yılmaz",
+    "date": "2024-05-20",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "type": "reformer",
+    "status": "scheduled",
+    "attendance": null,
+    "isRecurring": true,
+    "recurringPattern": "weekly",
+    "color": "#4CAF50",
+    "notes": "",
+    "createdAt": "2024-05-15T10:00:00.000Z",
+    "updatedAt": "2024-05-15T10:00:00.000Z"
+  },
+  {
+    "id": "session-2",
+    "clientId": "client-2",
+    "clientName": "Ayşe Demir",
+    "date": "2024-05-20",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "type": "mat",
+    "status": "scheduled",
+    "attendance": null,
+    "isRecurring": false,
+    "color": "#2196F3",
+    "notes": "",
+    "createdAt": "2024-05-15T12:00:00.000Z",
+    "updatedAt": "2024-05-15T12:00:00.000Z"
+  },
+  {
+    "id": "session-3",
+    "clientId": "client-1",
+    "clientName": "Elif Yılmaz",
+    "date": "2024-05-18",
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "type": "reformer",
+    "status": "completed",
+    "attendance": "present",
+    "isRecurring": false,
+    "color": "#4CAF50",
+    "notes": "Harika bir seans oldu",
+    "createdAt": "2024-05-10T10:00:00.000Z",
+    "updatedAt": "2024-05-18T11:00:00.000Z"
+  }
+]
