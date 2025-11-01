@@ -3,6 +3,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { View, ActivityIndicator, Text, StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from '@/types';
 import { AuthStorage } from '@/services/storage';
@@ -33,8 +34,12 @@ export default function RootNavigator() {
   };
 
   if (isLoading) {
-    // TODO: Add splash screen
-    return null;
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#4CAF50" />
+        <Text style={styles.loadingText}>Yükleniyor...</Text>
+      </View>
+    );
   }
 
   return (
@@ -47,3 +52,17 @@ export default function RootNavigator() {
     </Stack.Navigator>
   );
 }
+
+const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#FAFAFA',
+  },
+  loadingText: {
+    marginTop: 16,
+    fontSize: 16,
+    color: '#757575',
+  },
+});

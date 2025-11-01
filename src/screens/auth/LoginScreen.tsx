@@ -16,14 +16,20 @@ import {
 import { Colors, Typography, Spacing, Layout } from '@/constants';
 import { AuthStorage } from '@/services/storage';
 
-export default function LoginScreen() {
+export default function LoginScreen({ onLogin }: { onLogin?: () => void }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
-    // TODO: Implement proper authentication
-    // Şimdilik basit bir mock login
-    if (email && password) {
+    // Basit validasyon
+    if (!email || !password) {
+      return;
+    }
+
+    setLoading(true);
+    try {
+      // Mock authentication
       await AuthStorage.saveToken('mock-token-123');
       await AuthStorage.saveUser({
         id: 'user-1',
@@ -34,7 +40,15 @@ export default function LoginScreen() {
         studioName: 'Serene Pilates Studio',
         createdAt: new Date().toISOString(),
       });
-      // Navigation will handle the redirect automatically
+
+      // App.tsx'e bildir
+      if (onLogin) {
+        onLogin();
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -71,8 +85,14 @@ export default function LoginScreen() {
             secureTextEntry
           />
 
-          <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-            <Text style={styles.loginButtonText}>Giriş Yap</Text>
+          <TouchableOpacity
+            style={[styles.loginButton, loading && styles.loginButtonDisabled]}
+            onPress={handleLogin}
+            disabled={loading}
+          >
+            <Text style={styles.loginButtonText}>
+              {loading ? 'Giriş yapılıyor...' : 'Giriş Yap'}
+            </Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.forgotPassword}>
@@ -138,6 +158,9 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontSize: Typography.lg,
     fontWeight: Typography.semibold,
+  },
+  loginButtonDisabled: {
+    opacity: 0.6,
   },
   forgotPassword: {
     alignItems: 'center',
