@@ -2,7 +2,7 @@
   "name": "serene-pilates-crm",
   "version": "1.0.0",
   "description": "Pilates Salonu Müşteri Yönetim Uygulaması",
-  "main": "expo-router",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -25,7 +25,6 @@
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "expo": "~50.0.0",
-    "expo-router": "~3.4.0",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.2",

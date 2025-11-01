@@ -3,7 +3,6 @@
  */
 
 import { format, parse, isValid, addDays, subDays, startOfWeek, endOfWeek, startOfMonth, endOfMonth, isSameDay, isBefore, isAfter } from 'date-fns';
-import { tr } from 'date-fns/locale';
 
 /**
  * Tarihi YYYY-MM-DD formatına çevirir
@@ -18,7 +17,7 @@ export const formatDate = (date: Date | string): string => {
  */
 export const formatDateDisplay = (date: Date | string): string => {
   const d = typeof date === 'string' ? new Date(date) : date;
-  return format(d, 'dd/MM/yyyy', { locale: tr });
+  return format(d, 'dd/MM/yyyy');
 };
 
 /**
@@ -26,7 +25,7 @@ export const formatDateDisplay = (date: Date | string): string => {
  */
 export const formatDateLong = (date: Date | string): string => {
   const d = typeof date === 'string' ? new Date(date) : date;
-  return format(d, 'dd MMMM yyyy, EEEE', { locale: tr });
+  return format(d, 'dd/MM/yyyy');
 };
 
 /**
@@ -42,7 +41,7 @@ export const formatTime = (date: Date | string): string => {
  */
 export const formatDateTime = (date: Date | string): string => {
   const d = typeof date === 'string' ? new Date(date) : date;
-  return format(d, 'dd/MM/yyyy HH:mm', { locale: tr });
+  return format(d, 'dd/MM/yyyy HH:mm');
 };
 
 /**
